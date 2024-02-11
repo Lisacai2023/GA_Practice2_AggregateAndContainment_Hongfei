@@ -38,10 +38,14 @@ namespace GA_Practice2_AggregateAndContainment_Hongfei
 
         public void DisplayStudents()
         {
-            foreach(Student student in _classRoster)
+            //2-20-2-24 updated based on the teacher feedback
+            Console.WriteLine($"{_className} {_classNumber} - {_roomNumber} - Instructor {_instructor} - Number of student {_classRoster.Count}");
+            Console.WriteLine(Instructor.ToString());
+            foreach (Student student in _classRoster)
             {
-                Console.WriteLine($"{_className} {_classNumber} - {_roomNumber} - Instructor {_instructor} - Number of student {_classRoster.Count}");
-                Console.WriteLine(Instructor.ToString());
+                //Console.WriteLine($"{_className} {_classNumber} - {_roomNumber} - Instructor {_instructor} - Number of student {_classRoster.Count}");
+                //Console.WriteLine(Instructor.ToString());
+
                 Console.WriteLine(student.ToString());
             }
         }
